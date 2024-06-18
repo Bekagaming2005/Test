@@ -1,0 +1,244 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: rgb(250, 250, 250);
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+.language{
+  display: none;
+}
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.grid{
+  display: grid;
+}
+.form{
+  width: 360px;
+  height: 400px;
+  background: rgb(255, 254, 254);
+  margin-bottom: 10px;
+  border: 1px solid rgba(153, 153, 153, 0.355);
+}
+.signup{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  height: 70px;
+  background: #00f;
+  border: 1px solid rgba(153, 153, 153, 0.478);
+  background: rgb(255, 254, 254);
+}
+.logo{
+  position: relative;
+  top: -20px;
+  width: 200px;
+}
+input{
+  /* font-size: 1.1vh; */
+  background: rgb(250, 250, 250);
+  width: 270px;
+  padding: 11px 10px;
+  border-radius: 2px;
+  margin: 5px 0;
+  border: 1px solid rgba(153, 153, 153, 0.478);
+  outline: none;
+  opacity: 0.9;
+}
+.btn{
+  margin: 10px;
+  width: 270px;
+  padding: 8.5px;
+  background-color: rgba(0, 149, 246);
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: rgb(24, 119, 242);
+}
+.txt{
+  font-size: 12px;
+  position: relative;
+  top: 25px;
+  color: rgb(0, 55, 107);
+}
+.or{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+}
+.hr{
+  margin: 0 20px;
+  width: 100px;
+  height: 1px;
+  background-color: rgba(153, 153, 153, 0.478);;
+}
+#or{
+  color: rgba(153, 153, 153, 0.917);
+  text-transform: uppercase;
+}
+.icon{
+  height: 50px;
+  color: #385185;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 20px;
+}
+#icon{
+  font-size: 1.3em;
+}
+.facebook{
+  margin: 0 10px;
+  font-weight: 600;
+}
+.text{
+  font-size: 0.9em;
+}
+.sign{
+  color: rgb(0, 149, 246);
+  font-size: 0.93em;
+  position: relative;
+  left: 5px;
+  cursor: pointer;
+}
+.download{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  flex-direction: column;
+}
+.down{
+  font-size: 14px;
+}
+.downImg{
+  margin: 20px 0;
+}
+.img{
+  margin: 0 3px;
+  width: 136px;
+  height: 40px;
+}
+.meta{
+  display: none;
+}
+footer{
+  position: relative;
+  top: 160px;
+}
+.fot{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  line-height: 45px;
+  font-size: 0.88em;
+  flex-wrap: wrap;
+  width: 87%;
+}
+.fotText{
+  margin: 0 9.5px;
+  color: rgba(142, 142, 142);
+  cursor: pointer;
+}
+
+/* мобильная адаптация */
+@media (max-width: 375px) {
+  body{
+    background: rgb(255, 254, 254);
+    height: 100vh;
+  }
+  .language{
+    display: block;
+    position: relative;
+    top: -50px;
+    font-size: 0.75em;
+    color: rgba(142, 142, 142);
+  }
+  .logo {
+    position: relative;
+    top: -30px;
+    width: 180px;
+}
+  .form{
+    width: 100%;
+    height: 300px;
+    border: none;
+  }
+  input{
+    font-size: 0.8em;
+    padding: 10px 10px;
+    position: relative;
+    top: 60px;
+  }
+  .txt{
+    left: 80px;
+    color: rgb(0, 149, 246);
+    font-weight: 400;
+    font-size: 14px;
+  }
+  .btn{
+    position: relative;
+    top: 110px;
+  }
+  .icon{
+    display: none;
+  }
+  .signup{
+    border: none;
+    font-size: 0.94em;
+    position: relative;
+    top: 50px;
+  }
+  .text{
+    color: rgba(142, 142, 142);
+  }
+  .meta{
+    display: block;
+    text-align: center;
+    position: relative;
+    top: 120px;
+  }
+  .from{
+    font-size: 0.7em;
+    color: rgba(142, 142, 142);
+  }
+  #meta{
+    width: 60px;
+    margin: 5px 0;
+  }
+  .or{
+    display: none;
+  }
+  .download{
+    display: none;
+  }
+  .fot{
+    line-height: 25px;
+    font-size: 0.75em;
+    width: 100%;
+  }
+  .fotText{
+    margin: 0 6px;
+  }
+  #none{
+    display: none;
+  }
+}
